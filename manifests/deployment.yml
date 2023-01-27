@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: prasannaspringbootapp 
+  name: springyaml
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
-      app: prasannaspringbootapp
+      app: springyaml
   template:
     metadata:
       labels:
-        app:  prasannaspringbootapp
+        app: springyaml
     spec:
       containers:
-        - name:  prasannaspringbootapp 
-          image: kaksacr12345.azurecr.io/bprasanna881/aks-spring-classic
+        - name: springyaml
+          image: kaksacr12345.azurecr.io/springyaml
           ports:
           - containerPort: 80
