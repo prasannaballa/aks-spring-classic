@@ -38,6 +38,6 @@ spec:
     port: 8085
     protocol: TCP
     targetPort: 8085
-  type: ClusterIP
+  type: loadbalancer
   selector:
     app: springboot-app
